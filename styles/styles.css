@@ -101,20 +101,19 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #303030;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 0.5px solid;
 }
 
-.table .table-hover{
-
+.table-dark th{
+    background-color: #303030;
+    color: white;
+    border: none;
 }
 
 .table-hover tr:hover{
     background-color: #ddd;
-}
-
-.table .table-striped{
-
 }
 
 .table-striped tr:nth-child(even){
