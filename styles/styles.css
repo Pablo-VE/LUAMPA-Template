@@ -91,11 +91,8 @@
 }
 
 .table td, .table th {
-    /* border: 1px solid #ddd; */
     padding: 8px;
 }
-
-
 
 .table th{
     padding-top: 12px;
@@ -119,3 +116,30 @@
 .table-striped tr:nth-child(even){
     background-color: #e5e2e2;
 }
+
+/* ******* TABLES ******* */
+
+/* ******* INPUTS ******* */
+
+input{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+input:focus{   
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(104, 187, 239, 0.8);
+    outline: 0 none;
+}
+
+input:disabled{
+    background-color: rgb(237, 235, 235);
+}
+
+
+
+
+/* ******* INPUTS ******* */
+
