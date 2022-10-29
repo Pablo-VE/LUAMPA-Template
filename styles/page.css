@@ -143,6 +143,7 @@ nav ul,nav li {
 }
 
 .area {
+    width: 100%;
     float: left;
 }
 
@@ -201,6 +202,12 @@ nav ul,nav li {
     vertical-align: middle;
     align-items: center;
     text-align: center;
+}
+
+.container_items a{
+    text-decoration: none;
+    outline: none;
+    color: #000;
 }
 
 .instructions{
