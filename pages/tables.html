@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/luanpa.css"/>
 </head>
 <body>
+    <script src="../js/index.js"></script>
     <div class="area">
         <div class="banner_container">
             <div class="img_banner_container">
@@ -31,94 +32,541 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row mt-3 mb-3">
+            <div class="col text-center">
                 <h2>Light tables</h2>
             </div>
-            <div class="col">
+            <div class="spacer"></div>
+            <div class="col text-center">
                 <h2>Dark tables</h2>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <table class="table">
-                    <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Lastname</th>
-                    <th>Register date</th>
-                    </tr>
-                    <tr>
-                    <td>117920192</td>
-                    <td>Pablo</td>
-                    <td>Venegas Elizondo</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>118540482</td>
-                    <td>Elizabeth</td>
-                    <td>Ortiz Barrios</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>117920192</td>
-                    <td>Luis</td>
-                    <td>Valverde Navarro</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>117920192</td>
-                    <td>Angie</td>
-                    <td>Cordoba Castro</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>115430927</td>
-                    <td>Josue</td>
-                    <td>Venegas Elizondo</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                </table>
+                <h3>Regular table</h3>
             </div>
+            <div class="spacer"></div>
             <div class="col">
-                <table class="table table-dark">
-                    <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Lastname</th>
-                    <th>Register date</th>
-                    </tr>
-                    <tr>
-                    <td>117920192</td>
-                    <td>Pablo</td>
-                    <td>Venegas Elizondo</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>118540482</td>
-                    <td>Elizabeth</td>
-                    <td>Ortiz Barrios</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>117920192</td>
-                    <td>Luis</td>
-                    <td>Valverde Navarro</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>117920192</td>
-                    <td>Angie</td>
-                    <td>Cordoba Castro</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                    <tr>
-                    <td>115430927</td>
-                    <td>Josue</td>
-                    <td>Venegas Elizondo</td>
-                    <td>25/09/2022</td>
-                    </tr>
-                </table>
+                <h3>Regular table</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Register date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Pablo</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>118540482</td>
+                                    <td>Elizabeth</td>
+                                    <td>Ortiz Barrios</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Luis</td>
+                                    <td>Valverde Navarro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Angie</td>
+                                    <td>Cordoba Castro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>115430927</td>
+                                    <td>Josue</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttlr">Copy to clipboard</span>
+                                <i onclick="copyCode('ctlr', 'ttlr')" onmouseout="cleanTooltip('ttlr')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="ctlr">
+                            &lttable class="table"&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &ltthead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtID&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtName&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtLastname&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtRegister date&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/thead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lttbody&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt117920192&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtPablo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtVenegas Elizondo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt118540482&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtElizabeth&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtOrtiz Barrios&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/tbody&gt <br/>
+                            &lt/table&gt
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Register date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Pablo</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>118540482</td>
+                                    <td>Elizabeth</td>
+                                    <td>Ortiz Barrios</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Luis</td>
+                                    <td>Valverde Navarro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Angie</td>
+                                    <td>Cordoba Castro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>115430927</td>
+                                    <td>Josue</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttdr">Copy to clipboard</span>
+                                <i onclick="copyCode('ctdr', 'ttdr')" onmouseout="cleanTooltip('ttdr')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="ctdr">
+                            &lttable class="table table-dark"&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &ltthead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtID&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtName&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtLastname&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtRegister date&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/thead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lttbody&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt117920192&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtPablo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtVenegas Elizondo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt118540482&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtElizabeth&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtOrtiz Barrios&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/tbody&gt <br/>
+                            &lt/table&gt
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Striped table</h3>
+            </div>
+            <div class="spacer"></div>
+            <div class="col">
+                <h3>Striped table</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Register date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Pablo</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>118540482</td>
+                                    <td>Elizabeth</td>
+                                    <td>Ortiz Barrios</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Luis</td>
+                                    <td>Valverde Navarro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Angie</td>
+                                    <td>Cordoba Castro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>115430927</td>
+                                    <td>Josue</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttls">Copy to clipboard</span>
+                                <i onclick="copyCode('ctls', 'ttls')" onmouseout="cleanTooltip('ttls')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="ctls">
+                            &lttable class="table table-striped"&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &ltthead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtID&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtName&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtLastname&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtRegister date&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/thead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lttbody&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt117920192&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtPablo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtVenegas Elizondo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt118540482&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtElizabeth&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtOrtiz Barrios&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/tbody&gt <br/>
+                            &lt/table&gt
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Register date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Pablo</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>118540482</td>
+                                    <td>Elizabeth</td>
+                                    <td>Ortiz Barrios</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Luis</td>
+                                    <td>Valverde Navarro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Angie</td>
+                                    <td>Cordoba Castro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>115430927</td>
+                                    <td>Josue</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttds">Copy to clipboard</span>
+                                <i onclick="copyCode('ctds', 'ttds')" onmouseout="cleanTooltip('ttds')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="ctds">
+                            &lttable class="table table-dark table-striped"&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &ltthead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtID&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtName&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtLastname&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtRegister date&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/thead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lttbody&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt117920192&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtPablo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtVenegas Elizondo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt118540482&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtElizabeth&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtOrtiz Barrios&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/tbody&gt <br/>
+                            &lt/table&gt
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Hoverable  table</h3>
+            </div>
+            <div class="spacer"></div>
+            <div class="col">
+                <h3>Hoverable  table</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Register date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Pablo</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>118540482</td>
+                                    <td>Elizabeth</td>
+                                    <td>Ortiz Barrios</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Luis</td>
+                                    <td>Valverde Navarro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Angie</td>
+                                    <td>Cordoba Castro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>115430927</td>
+                                    <td>Josue</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttlh">Copy to clipboard</span>
+                                <i onclick="copyCode('ctlh', 'ttlh')" onmouseout="cleanTooltip('ttlh')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="ctlh">
+                            &lttable class="table table-hover"&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &ltthead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtID&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtName&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtLastname&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtRegister date&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/thead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lttbody&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt117920192&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtPablo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtVenegas Elizondo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt118540482&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtElizabeth&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtOrtiz Barrios&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/tbody&gt <br/>
+                            &lt/table&gt
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <table class="table table-dark table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Register date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Pablo</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>118540482</td>
+                                    <td>Elizabeth</td>
+                                    <td>Ortiz Barrios</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Luis</td>
+                                    <td>Valverde Navarro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>117920192</td>
+                                    <td>Angie</td>
+                                    <td>Cordoba Castro</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>115430927</td>
+                                    <td>Josue</td>
+                                    <td>Venegas Elizondo</td>
+                                    <td>25/09/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttdh">Copy to clipboard</span>
+                                <i onclick="copyCode('ctdh', 'ttdh')" onmouseout="cleanTooltip('ttdh')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="ctdh">
+                            &lttable class="table table-dark table-hover"&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &ltthead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtID&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtName&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtLastname&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &ltth&gtRegister date&lt/th&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/thead&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lttbody&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt117920192&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtPablo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtVenegas Elizondo&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lttr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt118540482&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtElizabeth&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gtOrtiz Barrios&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lttd&gt25/09/2022&lt/td&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt/tr&gt <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;    &lt/tbody&gt <br/>
+                            &lt/table&gt
+                        </code>
+                    </div>
+                </div>
             </div>
         </div>
     </div> 

@@ -214,7 +214,7 @@ nav ul,nav li {
     font-weight: bold;
 }
 
-code {
+#hrefCode {
     background-color: #eee;
     border: 1px solid #999;
     border-radius: 12px;
@@ -229,7 +229,7 @@ code {
 .tooltip {
     position: relative;
     display: inline-block;
-  }
+}
   
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -284,4 +284,8 @@ code {
 .fa_link{
     color: #3c75aa;
     width: 0px!important;
+}
+
+.spacer{
+    width: 10vw;
 }
