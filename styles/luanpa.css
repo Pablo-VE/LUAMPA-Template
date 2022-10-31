@@ -146,3 +146,201 @@ input:disabled{
 
 /* ******* INPUTS ******* */
 
+/* ******* BUTTONS ******* */
+
+/* primary #0d6efd
+secondary #6c757d
+info #0dcaf0
+success #198754
+warning #ffc107
+danger #dc3545
+link #0dcaf0 */
+
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    padding: 8px 13px 8px 13px;
+}
+
+.btn:disabled{
+    opacity: 0.7;
+    cursor: context-menu;
+}
+
+.btn-rounded{
+    border-radius: 20px;
+}
+
+.btn-sm{
+    font-size: 12px;
+    width: 7vw;
+}
+
+.btn-lg{
+    font-size: 17px;
+    width: 13vw;
+    
+}
+
+.btn-primary{
+    cursor: pointer;
+    background-color: #0d6efd; 
+    color: white;
+}
+
+.btn-secondary{
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-info{
+    cursor: pointer;
+    background-color: #0dcaf0;
+    }
+
+.btn-success{
+    cursor: pointer;
+    background-color: #198754;
+    color: white;
+}
+
+.btn-warning{
+    cursor: pointer;
+    background-color: #ffc107;
+    }
+
+.btn-danger{
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-link{
+    cursor: pointer;
+    background-color: #fff;
+    color: #0d6efd;
+}
+
+.btn-primary:hover:enabled{
+   background-color: #055ada; 
+   color: white;
+}
+
+.btn-secondary:hover:enabled{
+    background-color: #4b5157;
+    color: white;
+}
+
+.btn-info:hover:enabled{
+    background-color: #07b4d6;
+}
+
+.btn-success:hover:enabled{
+    background-color: #156942;
+}
+
+.btn-warning:hover:enabled{
+    background-color: #dfa806;
+}
+
+.btn-danger:hover:enabled{
+    background-color: #c41728;
+}
+
+.btn-link:hover:enabled{
+    text-decoration: underline;
+ 
+}
+
+
+
+
+.btn-outline-primary{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #0d6efd; 
+    color: #0d6efd; 
+}
+
+.btn-outline-secondary{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-info{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #0dcaf0;
+    color: #0dcaf0;
+}
+
+.btn-outline-success{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #198754;
+    color: #198754;
+}
+
+.btn-outline-warning{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+}
+
+.btn-outline-danger{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-link{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.btn-outline-primary:hover:enabled{
+   background-color: #0d6efd; 
+   color: white;
+}
+
+.btn-outline-secondary:hover:enabled{
+    background-color: #6c757d;;
+    color: white;
+}
+
+.btn-outline-info:hover:enabled{
+    background-color: #0dcaf0;
+    color: #000;
+}
+
+.btn-outline-success:hover:enabled{
+    background-color: #198754;
+    color: white;
+}
+
+.btn-outline-warning:hover:enabled{
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-outline-danger:hover:enabled{
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-link:hover:enabled{
+    text-decoration: underline;
+}
+
+
+
+/* ******* BUTTONS ******* */
+

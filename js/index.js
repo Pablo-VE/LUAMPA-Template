@@ -29,3 +29,4 @@ function cleanTooltip(id) {
     var tooltip = document.getElementById(id);
     tooltip.innerHTML = "Copy to clipboard";
 }
+

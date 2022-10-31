@@ -5,8 +5,6 @@
     vertical-align: middle;
 }
 
-.img_banner_container{
-}
 
 .title_banner_container{
     display: block;
@@ -30,11 +28,14 @@
     border-top: 1px solid #999;
     background-color: rgb(245, 245, 245);
     padding: 20px;
-    font-family: Consolas, monaco, monospace!important;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     font-size: 12px;
     position: relative;
+}
+
+.card_example_code_html code{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 .copy_btn{
@@ -50,6 +51,7 @@
 .tooltip_components {
     position: relative;
     display: inline-block;
+    padding-right: 10px;
 }
   
 .tooltip_components .tooltiptext {
@@ -83,4 +85,73 @@
 .tooltip_components:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+.buttons_card{
+    
+    border-radius: 12px;
+    border: 1px solid #999;
+}
+
+.buttons_card_title_container{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #999;
+    position: relative;
+}
+
+.buttons_card_title_btn{
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+.buttons_card_title_btn i{
+    cursor: pointer;
+}
+
+.buttons_card_title span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons_card_buttons_container{
+    padding: 20px;
+    display: flex;
+}
+
+.buttons_card_buttons_container button{
+    margin-right: 20px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+  
+.buttons_card_buttons_code{
+    text-align: left;
+    padding: 20px;
+    border-top: 1px solid #999;
+    background-color: rgb(245, 245, 245);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: relative;
+}
+
+.buttons_card_buttons_code code{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 15px;
 }

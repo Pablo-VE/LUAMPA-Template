@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../styles/buttons.css"/>
     <link rel="stylesheet" href="../styles/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/page.css"/>
-    
+    <link rel="icon" type="image/x-icon" href="../assets/logo.favicon">
 </head>
 <body>
-  <script src="./js/index.js"></script>
+  
   <div class="area">
     <div class="banner_container">
         <div class="img_banner_container">
@@ -29,6 +29,269 @@
             </div>
             <div class="mb-2">
                 <span>Use LUANPA-CSS’ custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</span>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <div class="buttons_card">
+                <div class="buttons_card_title_container">
+                    <div class="buttons_card_title">
+                        <span>Default Buttons</span>
+                    </div>
+                    <div class="buttons_card_title_btn">
+                        <i class="arrow down" id="ad_db" onclick="showCode('code_db', 'ad_db', 'au_db')"></i>
+                        <i class="arrow up" id="au_db" onclick="dontShowCode('code_db', 'ad_db', 'au_db')"></i>
+                    </div>
+                </div>
+                <div class="buttons_card_buttons_container">
+                    <button class="btn btn-primary">
+                        Primary
+                    </button>
+                    <button class="btn btn-secondary">
+                        Secondary
+                    </button>
+                    <button class="btn btn-info">
+                        Info
+                    </button>
+                    <button class="btn btn-success">
+                        Success
+                    </button>
+                    <button class="btn btn-warning">
+                        Warning
+                    </button>
+                    <button class="btn btn-danger">
+                        Danger
+                    </button>
+                    <button class="btn btn-link">
+                        Link
+                    </button>
+                </div>
+                <div class="buttons_card_buttons_code" id="code_db">
+                    <div class="copy_btn">
+                        <div class="tooltip_components">
+                            <span class="tooltiptext" id="ttdb">Copy to clipboard</span>
+                            <i onclick="copyCode('code_cdb', 'ttdb')" onmouseout="cleanTooltip('ttdb')" class="fa fa-copy"></i>
+                        </div>
+                    </div>
+                    <code id="code_cdb">
+                        &ltbutton class="btn btn-primary"&gt Primary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-secondary"&gt Secondary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-info"&gt Info &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-success"&gt Success &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-warning"&gt Warning &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-danger"&gt Danger &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-link"&gt Link &lt/button&gt
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <div class="buttons_card">
+                <div class="buttons_card_title_container">
+                    <div class="buttons_card_title">
+                        <span>Rounded Buttons</span>
+                    </div>
+                    <div class="buttons_card_title_btn">
+                        <i class="arrow down" id="ad_rb" onclick="showCode('code_rb', 'ad_rb', 'au_rb')"></i>
+                        <i class="arrow up" id="au_rb" onclick="dontShowCode('code_rb', 'ad_rb', 'au_rb')"></i>
+                    </div>
+                </div>
+                <div class="buttons_card_buttons_container">
+                    <button class="btn btn-rounded btn-primary">
+                        Primary
+                    </button>
+                    <button class="btn btn-rounded btn-secondary">
+                        Secondary
+                    </button>
+                    <button class="btn btn-rounded btn-info">
+                        Info
+                    </button>
+                    <button class="btn btn-rounded btn-success">
+                        Success
+                    </button>
+                    <button class="btn btn-rounded btn-warning">
+                        Warning
+                    </button>
+                    <button class="btn btn-rounded btn-danger">
+                        Danger
+                    </button>
+                    <button class="btn btn-rounded btn-link">
+                        Link
+                    </button>
+                </div>
+                <div class="buttons_card_buttons_code" id="code_rb">
+                    <div class="copy_btn">
+                        <div class="tooltip_components">
+                            <span class="tooltiptext" id="ttrb">Copy to clipboard</span>
+                            <i onclick="copyCode('code_crb', 'ttrb')" onmouseout="cleanTooltip('ttrb')" class="fa fa-copy"></i>
+                        </div>
+                    </div>
+                    <code id="code_crb">
+                        &ltbutton class="btn btn-rounded btn-primary"&gt Primary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-rounded btn-secondary"&gt Secondary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-rounded btn-info"&gt Info &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-rounded btn-success"&gt Success &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-rounded btn-warning"&gt Warning &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-rounded btn-danger"&gt Danger &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-rounded btn-link"&gt Link &lt/button&gt
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <div class="buttons_card">
+                <div class="buttons_card_title_container">
+                    <div class="buttons_card_title">
+                        <span>Outline Buttons</span>
+                    </div>
+                    <div class="buttons_card_title_btn">
+                        <i class="arrow down" id="ad_ob" onclick="showCode('code_ob', 'ad_ob', 'au_ob')"></i>
+                        <i class="arrow up" id="au_ob" onclick="dontShowCode('code_ob', 'ad_ob', 'au_ob')"></i>
+                    </div>
+                </div>
+                <div class="buttons_card_buttons_container">
+                    <button class="btn btn-outline-primary">
+                        Primary
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                        Secondary
+                    </button>
+                    <button class="btn btn-outline-info">
+                        Info
+                    </button>
+                    <button class="btn btn-outline-success">
+                        Success
+                    </button>
+                    <button class="btn btn-outline-warning">
+                        Warning
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        Danger
+                    </button>
+                    <button class="btn btn-outline-link">
+                        Link
+                    </button>
+                </div>
+                <div class="buttons_card_buttons_code" id="code_ob">
+                    <div class="copy_btn">
+                        <div class="tooltip_components">
+                            <span class="tooltiptext" id="ttob">Copy to clipboard</span>
+                            <i onclick="copyCode('code_cob', 'ttob')" onmouseout="cleanTooltip('ttob')" class="fa fa-copy"></i>
+                        </div>
+                    </div>
+                    <code id="code_cob">
+                        &ltbutton class="btn btn-outline-primary"&gt Primary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-outline-secondary"&gt Secondary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-outline-info"&gt Info &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-outline-success"&gt Success &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-outline-warning"&gt Warning &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-outline-danger"&gt Danger &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-outline-link"&gt Link &lt/button&gt
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <div class="buttons_card">
+                <div class="buttons_card_title_container">
+                    <div class="buttons_card_title">
+                        <span>Sizes</span>
+                    </div>
+                    <div class="buttons_card_title_btn">
+                        <i class="arrow down" id="ad_sb" onclick="showCode('code_sb', 'ad_sb', 'au_sb')"></i>
+                        <i class="arrow up" id="au_sb" onclick="dontShowCode('code_sb', 'ad_sb', 'au_sb')"></i>
+                    </div>
+                </div>
+                <div class="buttons_card_buttons_container">
+                    <button class="btn btn-sm btn-primary">
+                        Small button
+                    </button>
+                    <button class="btn btn-sm btn-secondary">
+                        Small button
+                    </button>
+                    <button class="btn btn-lg btn-primary">
+                        Large button
+                    </button>
+                    <button class="btn btn-lg btn-secondary">
+                        Large button
+                    </button>
+                </div>
+                <div class="buttons_card_buttons_code" id="code_sb">
+                    <div class="copy_btn">
+                        <div class="tooltip_components">
+                            <span class="tooltiptext" id="ttsb">Copy to clipboard</span>
+                            <i onclick="copyCode('code_csb', 'ttsb')" onmouseout="cleanTooltip('ttsb')" class="fa fa-copy"></i>
+                        </div>
+                    </div>
+                    <code id="code_csb">
+                        &ltbutton class="btn btn-sm btn-primary"&gt Primary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-sm btn-secondary"&gt Secondary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-lg btn-primary"&gt Primary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-lg btn-secondary"&gt Secondary &lt/button&gt <br/><br/>
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="col text-center">
+            <div class="buttons_card">
+                <div class="buttons_card_title_container">
+                    <div class="buttons_card_title">
+                        <span>Disabled State</span>
+                    </div>
+                    <div class="buttons_card_title_btn">
+                        <i class="arrow down" id="ad_dib" onclick="showCode('code_dib', 'ad_dib', 'au_dib')"></i>
+                        <i class="arrow up" id="au_dib" onclick="dontShowCode('code_dib', 'ad_dib', 'au_dib')"></i>
+                    </div>
+                </div>
+                <div class="buttons_card_buttons_container">
+                    <button class="btn btn-primary" disabled>
+                        Primary
+                    </button>
+                    <button class="btn btn-secondary" disabled>
+                        Secondary
+                    </button>
+                    <button class="btn btn-info" disabled>
+                        Info
+                    </button>
+                    <button class="btn btn-success" disabled>
+                        Success
+                    </button>
+                    <button class="btn btn-warning" disabled>
+                        Warning
+                    </button>
+                    <button class="btn btn-danger" disabled>
+                        Danger
+                    </button>
+                    <button class="btn btn-link" disabled>
+                        Link
+                    </button>
+                </div>
+                <div class="buttons_card_buttons_code" id="code_dib">
+                    <div class="copy_btn">
+                        <div class="tooltip_components">
+                            <span class="tooltiptext" id="ttdib">Copy to clipboard</span>
+                            <i onclick="copyCode('code_cdib', 'ttdib')" onmouseout="cleanTooltip('ttdib')" class="fa fa-copy"></i>
+                        </div>
+                    </div>
+                    <code id="code_cdib">
+                        &ltbutton class="btn btn-primary" disabled&gt Primary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-secondary" disabled&gt Secondary &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-info" disabled&gt Info &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-success" disabled&gt Success &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-warning" disabled&gt Warning &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-danger" disabled&gt Danger &lt/button&gt <br/><br/>
+                        &ltbutton class="btn btn-link" disabled&gt Link &lt/button&gt
+                    </code>
+                </div>
             </div>
         </div>
     </div>
@@ -85,5 +348,6 @@
       </li>
     </ul>
   </nav>
+  <script src="../js/buttons.js"></script>
 </body>
 </html>
