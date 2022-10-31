@@ -214,6 +214,14 @@ nav ul,nav li {
     font-weight: bold;
 }
 
+.btn-instructions{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 #hrefCode {
     background-color: #eee;
     border: 1px solid #999;
