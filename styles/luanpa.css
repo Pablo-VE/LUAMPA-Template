@@ -210,20 +210,17 @@ input:disabled{
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 20px;
-    font: 14px/20px "Open Sans", Arial, sans-serif;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
-.form-checkbox input[type="checkbox"]:hover + label:hover {
-    color: rgb(23, 86, 228);
-}
+
 
 .form-checkbox input[type="checkbox"]:hover + label:before {
-    background: #50565a;
+    background: #0d6efd;
+    border-color: #0d6efd;
     box-shadow: inset 0px 0px 0px 2px #f7f2f2;
 }
 
@@ -234,8 +231,8 @@ input:disabled{
 .form-checkbox input[type="checkbox"] + label:before {
     content: "";
     display: block;
-    width: 1.4em;
-    height: 1.4em;
+    width: 1em;
+    height: 1em;
     border: 1px solid #343a3f;
     border-radius: 0.2em;
     position: absolute;
@@ -247,31 +244,142 @@ input:disabled{
 }
 
 .form-checkbox input[type="checkbox"]:checked + label:before {
-    width: 1.3em;
-    height: 1.3em;
+    width: 1em;
+    height: 1em;
     border-radius: 0.2em;
     border: 2px solid #fff;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    background: #50565a;
-    box-shadow: 0 0 0 1px #000;
+    background: #0d6efd;
+    box-shadow: 0 0 0 1px #0d6efd;
 }
 
+
+.form-radio input[type="radio"] {
+    display: none;
+}
+
+.form-radio input[type="radio"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+.form-radio input[type="radio"]:hover + label:before {
+    border: 2px solid #0d6efd;
+    background: #fff;
+    box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+
+.form-radio input[type="radio"] + label:last-child {
+    margin-bottom: 0;
+}
+
+.form-radio input[type="radio"] + label:before {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #343a3f;
+    border-radius: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #f3f3f3;
+}
+
+.form-radio input[type="radio"]:checked + label:before {
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 1em;
+    border: 2px solid #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: #0d6efd;
+    box-shadow: 0 0 0 1px #0d6efd;
+}
+
+.btn-submit{
+    cursor: pointer;
+    background-color: #0d6efd; 
+    color: white;
+}
+
+.btn-reset{
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-cancel{
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-submit:hover:enabled{
+   background-color: #055ada; 
+   color: white;
+}
+
+.btn-reset:hover:enabled{
+    background-color: #4b5157;
+    color: white;
+}
+
+.btn-cancel:hover:enabled{
+    background-color: #c41728;
+}
+
+.btn-outline-submit{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #0d6efd; 
+    color: #0d6efd; 
+}
+
+.btn-outline-reset{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-cancel{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-submit:hover:enabled{
+   background-color: #0d6efd; 
+   color: white;
+}
+
+.btn-outline-reset:hover:enabled{
+    background-color: #6c757d;;
+    color: white;
+}
+
+.btn-outline-cancel:hover:enabled{
+    background-color: #dc3545;
+    color: white;
+}
 
 
 
 /* ******* INPUTS ******* */
 
 /* ******* BUTTONS ******* */
-
-/* primary #0d6efd
-secondary #6c757d
-info #0dcaf0
-success #198754
-warning #ffc107
-danger #dc3545
-link #0dcaf0 */
-
 
 .btn{
     border: none;
@@ -314,7 +422,7 @@ link #0dcaf0 */
 .btn-info{
     cursor: pointer;
     background-color: #0dcaf0;
-    }
+}
 
 .btn-success{
     cursor: pointer;

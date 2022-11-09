@@ -13,7 +13,7 @@
 </head>
 <body>
     <script src="../js/index.js"></script>
-    <div class="area">
+    <div class="area pb-3">
         <div class="banner_container">
             <div class="img_banner_container">
                 <img alt="banner_forms" src="../assets/img/forms.png"/>
@@ -168,11 +168,27 @@
                     <div class="col">
                         <div class="card_example_code">
                             <div class="card_example_code_example">
-                                <div class="row">
+                                <div class="row mb-1">
                                     <div class="col">
                                         <div class="form-checkbox">
                                             <input class="form-checkbox-input" id="cbx1" type="checkbox"/>
-                                            <label class="form-checkbox-label" for="cbx1">Opción 1</label>
+                                            <label class="form-checkbox-label" for="cbx1">Option 1</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <div class="col">
+                                        <div class="form-checkbox">
+                                            <input class="form-checkbox-input" id="cbx2" type="checkbox"/>
+                                            <label class="form-checkbox-label" for="cbx2">Option 2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-checkbox">
+                                            <input class="form-checkbox-input" id="cbx3" type="checkbox"/>
+                                            <label class="form-checkbox-label" for="cbx3">Option 3</label>
                                         </div>
                                     </div>
                                 </div>
@@ -185,9 +201,18 @@
                                     </div>
                                 </div>
                                 <code id="ccbx">
-                                    &ltinput type="text" placeholder="Write your name"/&gt <br/><br/>
-                                    &ltinput type="password" placeholder="Write your password"/&gt<br/><br/>
-                                    &ltinput type="date"/&gt
+                                    &ltdiv class="form-checkbox"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput class="form-checkbox-input" id="cbx1" type="checkbox"/&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="form-checkbox-label" for="cbx1"&gtOption 1&lt/label&gt <br/>
+                                    &lt/div&gt <br/><br/>
+                                    &ltdiv class="form-checkbox"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput class="form-checkbox-input" id="cbx2" type="checkbox"/&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="form-checkbox-label" for="cbx2"&gtOption 2&lt/label&gt <br/>
+                                    &lt/div&gt <br/><br/>
+                                    &ltdiv class="form-checkbox"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput class="form-checkbox-input" id="cbx3" type="checkbox"/&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="form-checkbox-label" for="cbx3"&gtOption 3&lt/label&gt <br/>
+                                    &lt/div&gt
                                 </code>
                             </div>
                         </div>
@@ -195,55 +220,58 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <h3>States</h3>
+                        <h3>Radio button</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="card_example_code">
                             <div class="card_example_code_example">
-                                <div class="row">
-                                    <div class="col subtitle-inside-card">
-                                        <span>Default</span>
+                                <div class="row mb-1">
+                                    <div class="col">
+                                        <div class="form-radio">
+                                            <input class="form-radio-input" name="form-radio-example" id="rb1" type="radio"/>
+                                            <label class="form-radio-label" for="rb1">Option 1</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <div class="col">
+                                        <div class="form-radio">
+                                            <input class="form-radio-input" name="form-radio-example" id="rb2" type="radio"/>
+                                            <label class="form-radio-label" for="rb2">Option 2</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Write your name"/>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col subtitle-inside-card">
-                                        <span>Disabled</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" placeholder="Disabled input" disabled/>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col subtitle-inside-card">
-                                        <span>Read-only</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" value="You only can read this text" readonly/>
+                                        <div class="form-radio">
+                                            <input class="form-radio-input" name="form-radio-example" id="rb3" type="radio"/>
+                                            <label class="form-radio-label" for="rb3">Option 3</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card_example_code_html">
                                 <div class="copy_btn">
                                     <div class="tooltip_components">
-                                        <span class="tooltiptext" id="ttis">Copy to clipboard</span>
-                                        <i onclick="copyCode('cis', 'ttis')" onmouseout="cleanTooltip('ttis')" class="fa fa-copy"></i>
+                                        <span class="tooltiptext" id="ttrb">Copy to clipboard</span>
+                                        <i onclick="copyCode('crb', 'ttrb')" onmouseout="cleanTooltip('ttrb')" class="fa fa-copy"></i>
                                     </div>
                                 </div>
-                                <code id="cis">
-                                    &ltinput type="text" placeholder="Write your name"/&gt <br/><br/>
-                                    &ltinput type="text" placeholder="Disabled input" disabled/&gt<br/><br/>
-                                    &ltinput type="text" value="You only can read this text" readonly/&gt
+                                <code id="crb">
+                                    &ltdiv class="form-radio"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput class="form-radio-input" name="form-radio-example" id="rb1" type="radio"/&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="form-radio-label" for="rb1"&gtOption 1&lt/label&gt <br/>
+                                    &lt/div&gt <br/><br/>
+                                    &ltdiv class="form-radio"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput class="form-radio-input" name="form-radio-example" id="rb2" type="radio"/&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="form-radio-label" for="rb2"&gtOption 2&lt/label&gt <br/>
+                                    &lt/div&gt <br/><br/>
+                                    &ltdiv class="form-radio"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput class="form-radio-input" name="form-radio-example" id="rb3" type="radio"/&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="form-radio-label" for="rb3"&gtOption 3&lt/label&gt <br/>
+                                    &lt/div&gt
                                 </code>
                             </div>
                         </div>
@@ -257,7 +285,38 @@
             </div>
             <div class="spacer"></div>
             <div class="col">
-                <h2>Radios</h2>
+                <h2>Buttons</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="spacer"></div>
+            <div class="col">
+                <div class="card_example_code">
+                    <div class="card_example_code_example">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-submit">Submit</button>
+                                <button class="btn btn-reset">Reset</button>
+                                <button class="btn btn-cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_example_code_html">
+                        <div class="copy_btn">
+                            <div class="tooltip_components">
+                                <span class="tooltiptext" id="ttbsrc">Copy to clipboard</span>
+                                <i onclick="copyCode('cbsrc', 'ttbsrc')" onmouseout="cleanTooltip('ttbsrc')" class="fa fa-copy"></i>
+                            </div>
+                        </div>
+                        <code id="cbsrc">
+                            &ltbutton class="btn btn-submit"&gtSubmit&lt/button&gt <br/><br/>
+                            &ltbutton class="btn btn-reset"&gtReset&lt/button&gt <br/><br/>
+                            &ltbutton class="btn btn-cancel"&gtCancel&lt/button&gt
+                        </code>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -4,9 +4,6 @@ function copyHrefCode() {
 
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Code copied";
-
-    // alert("Copied the text: " + copyText.textContent);
-    // console.log("hola mundo");
 }
 
 function outFunc() {
@@ -20,9 +17,6 @@ function copyCode(codeId, tooltipId) {
 
     var tooltip = document.getElementById(tooltipId);
     tooltip.innerHTML = "Code copied";
-
-    // alert("Copied the text: " + copyText.textContent);
-    // console.log("hola mundo");
 }
 
 function cleanTooltip(id) {
