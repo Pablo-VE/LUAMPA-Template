@@ -2,6 +2,66 @@
     padding: 20px;
 }
 
+.p-2{
+    padding: 30px;
+}
+
+.p-3{
+    padding: 40px;
+}
+
+.pt-1{
+    padding-top: 20px;
+}
+
+.pt-2{
+    padding-top: 30px;
+}
+
+.pt-3{
+    padding-top: 40px;
+}
+
+.pb-0_5{
+    padding-bottom: 10px;
+}
+
+.pb-1{
+    padding-bottom: 20px;
+}
+
+.pb-2{
+    padding-bottom: 30px;
+}
+
+.pb-3{
+    padding-bottom: 40px;
+}
+
+.ps-1{
+    padding-left: 20px;
+}
+
+.ps-2{
+    padding-left: 30px;
+}
+
+.ps-3{
+    padding-left: 40px;
+}
+
+.pe-1{
+    padding-right: 20px;
+}
+
+.pe-2{
+    padding-right: 30px;
+}
+
+.pe-3{
+    padding-right: 40px;
+}
+
 .m-1{
     margin: 20px;
 }
@@ -125,11 +185,12 @@
 /* ******* INPUTS ******* */
 
 input{
-    padding: 5px 10px 5px 10px;
+    padding: 8px 10px 8px 10px;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 8px;
-    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus{   
@@ -139,6 +200,61 @@ input:focus{
 
 input:disabled{
     background-color: rgb(237, 235, 235);
+}
+
+.form-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.form-checkbox input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.form-checkbox input[type="checkbox"]:hover + label:hover {
+    color: rgb(23, 86, 228);
+}
+
+.form-checkbox input[type="checkbox"]:hover + label:before {
+    background: #50565a;
+    box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+
+.form-checkbox input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+}
+
+.form-checkbox input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #343a3f;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #f3f3f3;
+}
+
+.form-checkbox input[type="checkbox"]:checked + label:before {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 0.2em;
+    border: 2px solid #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: #50565a;
+    box-shadow: 0 0 0 1px #000;
 }
 
 
@@ -344,3 +460,235 @@ link #0dcaf0 */
 
 /* ******* BUTTONS ******* */
 
+/* ******* TABS ******* */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+.tab button.active {
+    background-color: #ccc;
+}
+  
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/* ******* TABS ******* */
+
+
+/* ******* PROGRESS ******* */
+
+
+
+/* progress{
+    height: 5vh;
+    width: 100%;
+}
+
+.progress-primary{
+    accent-color: #0d6efd; 
+}
+
+.progress-secondary{
+    accent-color: #6c757d; 
+}
+
+.progress-info{
+    accent-color: #0dcaf0; 
+}
+
+.progress-success{
+    accent-color: #198754; 
+}
+
+.progress-warning{
+    accent-color: #ffc107;
+     
+} 
+
+.progress-danger{
+    accent-color: #dc3545; 
+} */
+
+.progress{
+    height: 2.5vh;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 15px;
+} 
+
+.progress-bar{
+    border-radius: 15px;
+    height: 100%;
+    width: 20%;
+    background-color: #0d6efd;
+}
+
+.prg-primary{
+    background-color: #0d6efd; 
+}
+
+.prg-secondary{
+    background-color: #6c757d; 
+}
+
+.prg-info{
+    background-color: #0dcaf0; 
+}
+
+.prg-success{
+    background-color: #198754; 
+}
+
+.prg-warning{
+    background-color: #ffc107;
+     
+} 
+
+.prg-danger{
+    background-color: #dc3545; 
+}
+
+.prg-striped, .prg-striped-primary{
+    background: repeating-linear-gradient(
+        45deg,
+        #4a8ef3,
+        #4a8ef3 10px,
+        #0d6efd 10px,
+        #0d6efd 20px
+    );
+}
+.prg-striped-secondary{
+    background: repeating-linear-gradient(
+        45deg,
+        #94989b,
+        #94989b 10px,
+        #6c757d 10px,
+        #6c757d 20px
+    );
+}
+.prg-striped-info{
+    background: repeating-linear-gradient(
+        45deg,
+        #77e8ff,
+        #77e8ff 10px,
+        #0dcaf0 10px,
+        #0dcaf0 20px
+    );
+}
+.prg-striped-success{
+    background: repeating-linear-gradient(
+        45deg,
+        #1bbb70,
+        #1bbb70 10px,
+        #198754 10px,
+        #198754 20px
+    );
+}
+.prg-striped-warning{
+    background: repeating-linear-gradient(
+        45deg,
+        #fad463,
+        #fad463 10px,
+        #ffc107 10px,
+        #ffc107 20px
+    );
+}
+.prg-striped-danger{
+    background: repeating-linear-gradient(
+        45deg,
+        #d45c68,
+        #d45c68 10px,
+        #dc3545 10px,
+        #dc3545 20px
+    );
+}
+
+.prg-multicolor{
+    height: 100%;
+    animation: multicolor 5s infinite;
+}
+
+@keyframes multicolor {
+    0%   { background-color: #0d6efd; }
+    20%  { background-color: #6c757d; }
+    40%  { background-color: #0dcaf0; }
+    60%  { background-color: #198754; }
+    80%  { background-color: #ffc107; }
+    100% { background-color: #dc3545; }
+}
+
+
+/* ******* PROGRESS ******* */
+
+
+/* ******* GROUP LIST ******* */
+
+.list-group{
+    list-style-type: none;
+    border: 1px solid rgb(207, 206, 206);
+    border-radius: 12px;
+    padding: 0px!important;
+}
+
+.list-group-item{
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.list-group .list-group-item:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.list-group .list-group-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.list-group-item.active{
+    background-color: #0d6efd;
+    color: #fff;
+}
+.list-group-item.hover.active:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: #000;
+}
+
+.list-group-item.hover:hover{
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.list-group.flush{
+    list-style-type: none;
+    border: none;
+    border-radius: none;
+    padding: 0px!important;
+}
+
+/* ******* GROUP LIST ******* */

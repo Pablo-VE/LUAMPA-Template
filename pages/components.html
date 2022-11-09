@@ -12,8 +12,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/logo.favicon">
 </head>
 <body>
-  <script src="./js/index.js"></script>
-  <div class="area">
+  
+  <div class="area pb-3">
     <div class="banner_container">
         <div class="img_banner_container">
             <img alt="banner_components" src="../assets/img/components.png"/>
@@ -30,6 +30,429 @@
             <div class="mb-2">
                 <span>Use LUANPA-CSS’ custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</span>
             </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <h2>Tabs</h2>
+        </div>
+        <div class="spacer"></div>
+        <div class="col">
+            <h2>Progress bar</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <div class="tab">
+                                <button class="tablinks" onclick="openTab(event, 'idTab1')" id="defaultTab">London</button>
+                                <button class="tablinks" onclick="openTab(event, 'idTab2')">Paris</button>
+                                <button class="tablinks" onclick="openTab(event, 'idTab3')">Tokyo</button>
+                            </div>
+                              
+                            <div id="idTab1" class="tabcontent">
+                                <h3>London</h3>
+                                <p>London is the capital city of England.</p>
+                            </div>
+                              
+                            <div id="idTab2" class="tabcontent">
+                                <h3>Paris</h3>
+                                <p>Paris is the capital of France.</p> 
+                            </div>
+                              
+                            <div id="idTab3" class="tabcontent">
+                                <h3>Tokyo</h3>
+                                <p>Tokyo is the capital of Japan.</p>
+                            </div>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="ttab">Copy to clipboard</span>
+                                    <i onclick="copyCode('ctab', 'ttab')" onmouseout="cleanTooltip('ttab')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="ctab">
+                                &ltdiv class="tab"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltbutton class="tablinks" onclick="openTab(event, 'idTab1')"&gtLondon&lt/button&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltbutton class="tablinks" onclick="openTab(event, 'idTab2')"&gtParis&lt/button&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltbutton class="tablinks" onclick="openTab(event, 'idTab3')"&gtTokyo&lt/button&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                
+                                &ltdiv id="idTab1" class="tabcontent"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lth3&gtLondon&lt/h3&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltp&gtLondon is the capital city of England.&lt/p&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                
+                                &ltdiv id="idTab2" class="tabcontent"&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lth3&gtParis&lt/h3&gt <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltp&gtParis is the capital of France.&lt/p&gt <br/> 
+                                &lt/div&gt <br/><br/>
+                                
+                                &ltdiv id="idTab3" class="tabcontent"&gt<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lth3&gtTokyo&lt/h3&gt<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltp&gtTokyo is the capital of Japan.&lt/p&gt<br/>
+                                &lt/div&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>List group</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Regular</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And fifth item</li>
+                            </ul>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tgl">Copy to clipboard</span>
+                                    <i onclick="copyCode('cgl', 'tgl')" onmouseout="cleanTooltip('tgl')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cgl">
+                                &ltul class="list-group"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtAn item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtA second item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtA third item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtA fourth item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtAnd fifth item&lt/li&gt <br/>
+                                &lt/ul&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Hover and active</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <ul class="list-group">
+                                <li class="list-group-item hover">An item</li>
+                                <li class="list-group-item hover active">A second item</li>
+                                <li class="list-group-item hover">A third item</li>
+                                <li class="list-group-item hover">A fourth item</li>
+                                <li class="list-group-item hover">And fifth item</li>
+                            </ul>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tgla">Copy to clipboard</span>
+                                    <i onclick="copyCode('cgla', 'tgla')" onmouseout="cleanTooltip('tgla')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cgla">
+                                &ltul class="list-group"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item hover"&gtAn item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item hover active"&gtA second item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item hover"&gtA third item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item hover"&gtA fourth item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item hover"&gtAnd fifth item&lt/li&gt <br/>
+                                &lt/ul&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Flush</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <ul class="list-group flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And fifth item</li>
+                            </ul>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tglf">Copy to clipboard</span>
+                                    <i onclick="copyCode('cglf', 'tglf')" onmouseout="cleanTooltip('tglf')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cglf">
+                                &ltul class="list-group flush"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtAn item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtA second item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtA third item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtA fourth item&lt/li&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltli class="list-group-item"&gtAnd fifth item&lt/li&gt <br/>
+                                &lt/ul&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h3>Regular</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tpr">Copy to clipboard</span>
+                                    <i onclick="copyCode('cpr', 'tpr')" onmouseout="cleanTooltip('tpr')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cpr">
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar" style="width: 10%"&gt&lt/div&gt <br/>
+                                &lt/div&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Colors</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-primary" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-secondary" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-info" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-success" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-warning" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-danger" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tpc">Copy to clipboard</span>
+                                    <i onclick="copyCode('cpc', 'tpc')" onmouseout="cleanTooltip('tpc')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cpc">
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-primary" style="width: 10%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-secondary" style="width: 20%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-info" style="width: 30%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-success" style="width: 40%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-warning" style="width: 50%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-danger" style="width: 60%"&gt&lt/div&gt <br/>
+                                &lt/div&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Striped</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-striped-primary" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-striped-secondary" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-striped-info" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-striped-success" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-striped-warning" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb">
+                                <div class="col">
+                                    <div class="progress" >
+                                        <div class="progress-bar prg-striped-danger" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tps">Copy to clipboard</span>
+                                    <i onclick="copyCode('cps', 'tps')" onmouseout="cleanTooltip('tps')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cps">
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-striped-primary" style="width: 10%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-striped-secondary" style="width: 20%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-striped-info" style="width: 30%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-striped-success" style="width: 40%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-striped-warning" style="width: 50%"&gt&lt/div&gt <br/>
+                                &lt/div&gt <br/><br/>
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-striped-danger" style="width: 60%"&gt&lt/div&gt <br/>
+                                &lt/div&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Multicolor</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card_example_code">
+                        <div class="card_example_code_example">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar prg-multicolor" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_example_code_html">
+                            <div class="copy_btn">
+                                <div class="tooltip_components">
+                                    <span class="tooltiptext" id="tpm">Copy to clipboard</span>
+                                    <i onclick="copyCode('cpm', 'tpm')" onmouseout="cleanTooltip('tpm')" class="fa fa-copy"></i>
+                                </div>
+                            </div>
+                            <code id="cpm">
+                                &ltdiv class="progress"&gt <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="progress-bar prg-multicolor" style="width: 50%"&gt&lt/div&gt <br/>
+                                &lt/div&gt
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
   </div>
@@ -85,5 +508,8 @@
       </li>
     </ul>
   </nav>
+  <script src="../js/index.js"></script>
+  <script src="../js/luanpa.js"></script>
+  <script src="../js/buttons.js"></script>
 </body>
 </html>

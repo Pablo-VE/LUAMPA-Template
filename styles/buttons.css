@@ -11,6 +11,13 @@
     /* width: 50%; */
 }
 
+.subtitle-inside-card{
+    margin-bottom: 10px;
+}
+.subtitle-inside-card span{
+    font-size: 0.8rem;
+    color: #555;
+}
 
 .card_example_code{
     /* margin: 20px; */
@@ -156,4 +163,18 @@
 .buttons_card_buttons_code code{
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     font-size: 15px;
+}
+
+.card_code{
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #999;
+    background-color: rgb(245, 245, 245);
+    border-radius: 12px;
+    display: relative;
+}
+
+.card_code code{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 12px; 
 }
